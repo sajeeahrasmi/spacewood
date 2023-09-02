@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="751.0" prefWidth="916.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="anchorPane" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.SupplierFormController">
+   <children>
+      <AnchorPane layoutX="5.0" prefHeight="65.0" prefWidth="874.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2; -fx-border-color: #03045e;" styleClass="buttonPane" stylesheets="@../custom.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton fx:id="btnAddSup" buttonType="RAISED" onAction="#btnAddSupOnAction" onMouseEntered="#btnAddSupEntered" onMouseExited="#btnAddSupExited" prefHeight="65.0" prefWidth="165.0" text="Add Supplier" />
+            <JFXButton fx:id="btnViewSup" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="165.0" onAction="#btnViewSupOnAction" onMouseEntered="#btnViewSupEntered" onMouseExited="#btnViewSupExited" prefHeight="65.0" prefWidth="165.0" text="View Supplier" wrapText="true" />
+            <JFXButton fx:id="btnAddLog" buttonType="RAISED" layoutX="330.0" onAction="#btnAddGoodsSupOnAction" onMouseEntered="#btnAddLogEntered" onMouseExited="#btnAddLogExited" prefHeight="65.0" prefWidth="165.0" text="Add Logs" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="supComPane" layoutY="81.0" prefHeight="639.0" prefWidth="874.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: pink;" stylesheets="@../custom.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+   </children>
+</AnchorPane>

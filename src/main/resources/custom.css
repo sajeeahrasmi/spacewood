@@ -1,0 +1,40 @@
+.dashBoard{
+    -fx-background-color: linear-gradient(to top, #0077b6, #00b4d8, #90e0ef);
+}
+
+.anchorPane{
+    -fx-background-color: linear-gradient(to right, #5294b1, #ebf8e1,#e4890a);
+}
+
+.buttonPane{
+    -fx-background-color: linear-gradient(to right, #0077b6, #00b2ca, #7dcfb6, #fbd1a2, #FF8400);
+}
+
+.designone{
+    -fx-background-color: linear-gradient(to right, #6096B4, #93BFCF, #BDCDD6, #EEE9DA);
+}
+
+.designtwo{
+    -fx-background-color: linear-gradient(to right, #ECF9FF, #FFFBEB, #FFE7CC, #F8CBA6);
+}
+
+.designthree{
+    -fx-background-color: linear-gradient(to right, #6096B4, #BDCDD6, #FFFBEB, #FFE7CC);
+}
+
+.image{
+
+    -fx-background-image: 10px 10px 10px 10px;
+}
+.login{
+    -fx-background-color: linear-gradient(to right, #002B5B, #2B4865, #256D85, #8FE3CF);
+}
+
+.buttonLogin{
+    -fx-background-color: linear-gradient(to right, #748DA6, #9CB4CC, #D3CEDF, #F2D7D9);
+}
+
+.text{
+    -fx-text-fill:#FFE7CC ;
+
+}

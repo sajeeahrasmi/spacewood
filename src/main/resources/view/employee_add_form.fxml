@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="874.0" style="-fx-background-radius: 30;" styleClass="designthree" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.EmployeeAddFormController">
+   <children>
+      <Label layoutX="30.0" layoutY="85.0" prefHeight="21.0" prefWidth="113.0" text="Employee ID" />
+      <Label layoutX="413.0" layoutY="85.0" prefHeight="21.0" prefWidth="113.0" text="NIC Number" />
+      <JFXTextField fx:id="txtNic" focusColor="#276c93" layoutX="526.0" layoutY="81.0" prefHeight="29.0" prefWidth="259.0" />
+      <Label layoutX="30.0" layoutY="140.0" prefHeight="21.0" prefWidth="113.0" text="Full Name" />
+      <JFXTextField fx:id="txtFirstName" focusColor="#276c93" labelFloat="true" layoutX="55.0" layoutY="179.0" prefHeight="29.0" prefWidth="334.0" promptText="First Name" />
+      <JFXTextField fx:id="txtLastName" focusColor="#276c93" labelFloat="true" layoutX="452.0" layoutY="179.0" prefHeight="29.0" prefWidth="334.0" promptText="Last Name" />
+      <Label layoutX="30.0" layoutY="242.0" prefHeight="21.0" prefWidth="113.0" text="Address" />
+      <JFXTextField fx:id="txtNo" focusColor="#276c93" labelFloat="true" layoutX="55.0" layoutY="274.0" prefHeight="29.0" prefWidth="334.0" promptText="No" />
+      <Label layoutX="30.0" layoutY="402.0" prefHeight="21.0" prefWidth="113.0" text="Contact" />
+      <JFXTextField fx:id="txtPhone" focusColor="#276c93" labelFloat="true" layoutX="55.0" layoutY="444.0" prefHeight="29.0" prefWidth="334.0" promptText="Phone" />
+      <Label layoutX="30.0" layoutY="515.0" prefHeight="21.0" prefWidth="113.0" text="Date of Joined" />
+      <JFXTextField fx:id="txtDate" focusColor="#276c93" labelFloat="true" layoutX="188.0" layoutY="511.0" prefHeight="29.0" prefWidth="298.0" promptText="YYYY/MM/DD" />
+      <JFXButton layoutX="37.0" layoutY="572.0" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="768.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 20;" text="Save" />
+      <Label layoutX="81.0" layoutY="35.0" text="Add Employee" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmployeeId" alignment="CENTER" layoutX="143.0" layoutY="81.0" prefHeight="29.0" prefWidth="244.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5;">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtStreet1" focusColor="#276c93" labelFloat="true" layoutX="452.0" layoutY="274.0" prefHeight="29.0" prefWidth="334.0" promptText="Street 1" />
+      <JFXTextField fx:id="txtStreet2" focusColor="#276c93" labelFloat="true" layoutX="55.0" layoutY="335.0" prefHeight="29.0" prefWidth="334.0" promptText="Street 2" />
+      <JFXTextField fx:id="txtCity" focusColor="#276c93" labelFloat="true" layoutX="452.0" layoutY="335.0" prefHeight="29.0" prefWidth="334.0" promptText="Town/City" />
+      <JFXTextField fx:id="txtWhatsapp" focusColor="#276c93" labelFloat="true" layoutX="452.0" layoutY="444.0" prefHeight="29.0" prefWidth="334.0" promptText="Whatsapp" />
+   </children>
+</AnchorPane>

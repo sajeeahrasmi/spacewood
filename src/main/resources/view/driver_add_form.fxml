@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="874.0" style="-fx-background-radius: 30;" styleClass="designthree" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.DriverAddFormController">
+   <children>
+      <Label layoutX="33.0" layoutY="50.0" text="Driver ID" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDriverId" alignment="CENTER" layoutX="153.0" layoutY="41.0" prefHeight="30.0" prefWidth="239.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5;">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="155.0" text="Full Name" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="109.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtFirstName" focusColor="#276c93" labelFloat="true" layoutX="65.0" layoutY="209.0" prefHeight="29.0" prefWidth="356.0" promptText="First Name" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="157.0" />
+      <Label layoutX="45.0" layoutY="281.0" text="Address" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="233.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtNo" focusColor="#276c93" labelFloat="true" layoutX="52.0" layoutY="306.0" prefHeight="29.0" prefWidth="356.0" promptText="No" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="280.0" />
+      <JFXTextField fx:id="txtStreet2" focusColor="#276c93" labelFloat="true" layoutX="85.0" layoutY="363.0" prefHeight="29.0" prefWidth="356.0" promptText="Street 2" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="339.0" />
+      <Label layoutX="46.0" layoutY="425.0" text="Contact" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="409.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtPhone" focusColor="#276c93" labelFloat="true" layoutX="52.0" layoutY="462.0" prefHeight="29.0" prefWidth="356.0" promptText="Phone" AnchorPane.topAnchor="461.0" />
+      <JFXButton layoutX="447.0" layoutY="537.0" onAction="#btnSaveOnAction" prefHeight="42.0" prefWidth="356.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 20;" text="Save" />
+      <Label layoutX="33.0" layoutY="542.0" text="Vehicle No.">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtVehicle" focusColor="#276c93" layoutX="153.0" layoutY="538.0" prefHeight="29.0" prefWidth="209.0" />
+      <JFXTextField fx:id="txtLastName" focusColor="#276c93" labelFloat="true" layoutX="449.0" layoutY="157.0" prefHeight="29.0" prefWidth="356.0" promptText="Last Name" AnchorPane.leftAnchor="447.0" />
+      <JFXTextField fx:id="txtStreet1" focusColor="#276c93" labelFloat="true" layoutX="445.0" layoutY="312.0" prefHeight="29.0" prefWidth="356.0" promptText="Street 1" AnchorPane.leftAnchor="447.0" AnchorPane.topAnchor="280.0" />
+      <JFXTextField fx:id="txtCity" focusColor="#276c93" labelFloat="true" layoutX="445.0" layoutY="363.0" prefHeight="29.0" prefWidth="356.0" promptText="Town/City" AnchorPane.leftAnchor="447.0" AnchorPane.topAnchor="339.0" />
+      <JFXTextField fx:id="txtWhatsapp" focusColor="#276c93" labelFloat="true" layoutX="447.0" layoutY="462.0" prefHeight="29.0" prefWidth="356.0" promptText="Whatsapp" AnchorPane.topAnchor="461.0" />
+   </children>
+</AnchorPane>

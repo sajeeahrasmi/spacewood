@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="751.0" prefWidth="916.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="anchorPane" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.StockFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="11.0" prefHeight="65.0" prefWidth="874.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2; -fx-border-color: #03045e;" styleClass="buttonPane" stylesheets="@../custom.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton fx:id="btnViewLog" buttonType="RAISED" onAction="#btnViewLogsOnAction" onMouseEntered="#btnViewLogEntered" onMouseExited="#btnViewLogExited" prefHeight="65.0" prefWidth="150.0" text="View logs" />
+            <JFXButton fx:id="btnAddWoodcut" buttonType="RAISED" layoutX="150.0" onAction="#btnAddWoodcutsOnAction" onMouseEntered="#btnAddWoodcutEntered" onMouseExited="#btnAddWoodcutExited" prefHeight="65.0" prefWidth="150.0" text="Add woodcuts" />
+            <JFXButton fx:id="btnViewWoodcut" buttonType="RAISED" layoutX="300.0" onAction="#btnViewWoodcutsOnAction" onMouseEntered="#btnViewWoodcutEntered" onMouseExited="#btnViewWoodcutExited" prefHeight="65.0" prefWidth="150.0" text="View woodcuts" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="componentPane" layoutY="81.0" prefHeight="640.0" prefWidth="874.0" style="-fx-background-color: pink; -fx-background-radius: 30;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+   </children>
+</AnchorPane>

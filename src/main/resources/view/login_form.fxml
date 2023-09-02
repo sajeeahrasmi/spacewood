@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="720.0" prefWidth="1024.0" styleClass="buttonLogin" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="613.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kiefer-likens-ysfrLKs9cn0-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="786.0" fitWidth="758.0" layoutX="266.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kiefer-likens-ysfrLKs9cn0-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="150.0" layoutY="100.0" prefHeight="516.0" prefWidth="716.0" styleClass="login" stylesheets="@../custom.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Label alignment="CENTER" layoutX="231.0" layoutY="14.0" prefHeight="106.0" prefWidth="297.0" text="Welcome" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="196.0">
+               <font>
+                  <Font name="Bell MT Bold" size="64.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5284090909090909" centerY="0.5048543689320388" radius="0.9268292682926829">
+                     <stops>
+                        <Stop color="#543636" />
+                        <Stop color="#114154" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <JFXTextField fx:id="txtFieldUser" focusColor="#316c8c" labelFloat="true" layoutX="48.0" layoutY="195.0" onAction="#txtUserOnAction" prefHeight="29.0" prefWidth="284.0" promptText="Username" styleClass="text" stylesheets="@../custom.css">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="59.0" layoutY="370.0" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="262.0" style="-fx-background-radius: 15; -fx-border-color: #002B5B; -fx-border-radius: 15; -fx-border-width: 2.5;" styleClass="buttonLogin" stylesheets="@../custom.css" text="Login" />
+            <JFXPasswordField fx:id="txtFieldPass" focusColor="#316c8c" labelFloat="true" layoutX="48.0" layoutY="284.0" onAction="#txtPassOnAction" prefHeight="29.0" prefWidth="284.0" promptText="Password" styleClass="text" stylesheets="@../custom.css">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXPasswordField>
+            <ImageView fitHeight="239.0" fitWidth="239.0" layoutX="409.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/sasasa.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

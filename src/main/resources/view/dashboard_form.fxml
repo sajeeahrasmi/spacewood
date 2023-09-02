@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="785.0" prefWidth="1123.0" styleClass="anchorPane" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.DashboardFormController">
+   <children>
+      <AnchorPane fx:id="buttonPane" layoutX="14.0" layoutY="13.0" prefHeight="751.0" prefWidth="150.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: #03045e; -fx-border-width: 2;" styleClass="dashBoard" stylesheets="@../custom.css" AnchorPane.topAnchor="13.0">
+         <children>
+            <JFXButton fx:id="txtBtnCust" buttonType="RAISED" layoutY="188.0" onAction="#btnCustOnAction" onMouseEntered="#custMouseEntered" onMouseExited="#custMouseExited" prefHeight="60.0" prefWidth="150.0" text="Customer" AnchorPane.leftAnchor="0.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Customer.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="txtBtnSup" buttonType="RAISED" layoutY="248.0" onAction="#btnSupOnAction" onMouseEntered="#supMouseEntered" onMouseExited="#supMouseExited" prefHeight="60.0" prefWidth="150.0" text="Supplier" AnchorPane.leftAnchor="0.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Supplier.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="txtBtnStock" buttonType="RAISED" layoutY="308.0" onAction="#btnStockOnAction" onMouseEntered="#stockMouseEntered" onMouseExited="#stockMouseExited" prefHeight="60.0" prefWidth="150.0" text="Stock" AnchorPane.leftAnchor="0.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Logs.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="txtBtnEmp" buttonType="RAISED" layoutY="368.0" onAction="#btnEmpOnAction" onMouseEntered="#EmpMouseEntered" onMouseExited="#EmpMouseExited" prefHeight="60.0" prefWidth="150.0" text="Employee" AnchorPane.leftAnchor="0.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Carpenter.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="txtBtnDriver" buttonType="RAISED" layoutY="428.0" onAction="#btnDriOnAction" onMouseEntered="#DriverMouseEntered" onMouseExited="#DriverMouseExited" prefHeight="60.0" prefWidth="150.0" text="Driver" AnchorPane.leftAnchor="0.0">
+               <effect>
+                  <Glow />
+               </effect>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Driver.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/sasasa.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="componentPane" layoutX="181.0" layoutY="12.0" prefHeight="751.0" prefWidth="916.0" style="-fx-background-color: pink; -fx-background-radius: 30;" AnchorPane.topAnchor="12.0" />
+   </children>
+</AnchorPane>

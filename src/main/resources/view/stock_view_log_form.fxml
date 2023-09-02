@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="874.0" style="-fx-background-radius: 30;" styleClass="designthree" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.StockViewLogFormController">
+   <children>
+      <Label layoutX="62.0" layoutY="252.0" prefHeight="21.0" prefWidth="58.0" text="Type" AnchorPane.leftAnchor="62.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <JFXComboBox fx:id="cmbType" focusColor="#276c93" layoutX="153.0" layoutY="246.0" prefHeight="31.0" prefWidth="266.0" />
+      <JFXButton layoutX="480.0" layoutY="242.0" onAction="#btnSearchOnAction" prefHeight="40.0" prefWidth="322.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 20;" text="Search" />
+      <TableView fx:id="tblLog" layoutX="42.0" layoutY="329.0" prefHeight="254.0" prefWidth="786.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5;">
+        <columns>
+          <TableColumn fx:id="colLogId" prefWidth="117.0" text="Log_ID" />
+          <TableColumn fx:id="colType" prefWidth="152.0" text="Type" />
+            <TableColumn fx:id="colPermitNo" prefWidth="149.0" text="Permit_No" />
+            <TableColumn fx:id="colLocation" prefWidth="147.0" text="Location" />
+            <TableColumn fx:id="colSupId" prefWidth="128.0" text="Supplier_ID" />
+            <TableColumn fx:id="colUsed" prefWidth="92.0" text="Used" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Mahogany" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="88.0" />
+      <Label alignment="CENTER" layoutX="236.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Jak" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="88.0" />
+      <Label alignment="CENTER" layoutX="380.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;" text="Teak" />
+      <Label alignment="CENTER" layoutX="521.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Sooriyamara" />
+      <Label alignment="CENTER" layoutX="666.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Kumbuk" />
+      <Label fx:id="lblMahogany" alignment="CENTER" layoutX="90.0" layoutY="138.0" prefHeight="60.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;" text="4">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblJak" alignment="CENTER" layoutX="236.0" layoutY="138.0" prefHeight="60.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label fx:id="lblTeak" alignment="CENTER" layoutX="380.0" layoutY="138.0" prefHeight="60.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label fx:id="lblSooriyamara" alignment="CENTER" layoutX="521.0" layoutY="138.0" prefHeight="60.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label fx:id="lblKumbuk" alignment="CENTER" layoutX="666.0" layoutY="138.0" prefHeight="60.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font size="38.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="36.0" prefHeight="21.0" prefWidth="179.0" text="Balance log counts">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

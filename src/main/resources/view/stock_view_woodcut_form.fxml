@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="874.0" style="-fx-background-radius: 30;" styleClass="designthree" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.StockViewWoodcutFormController">
+   <children>
+      <Label layoutX="58.0" layoutY="191.0" prefHeight="21.0" prefWidth="69.0" text="Log ID" />
+      <JFXComboBox fx:id="cmbLogId" focusColor="#276c93" layoutX="173.0" layoutY="186.0" onAction="#cmbLogIdOnAction" prefHeight="31.0" prefWidth="224.0" />
+      <Label layoutX="35.0" layoutY="148.0" text="Woodcut Stocks Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="243.0" text="Woodcut ID" />
+      <JFXTextField fx:id="txtWoodcutId" focusColor="#276c93" layoutX="173.0" layoutY="239.0" prefHeight="29.0" prefWidth="224.0" />
+      <Label layoutX="445.0" layoutY="243.0" text="Pieces used" />
+      <JFXButton buttonType="RAISED" layoutX="46.0" layoutY="301.0" onAction="#btnUpdateOnAction" prefHeight="45.0" prefWidth="788.0" style="-fx-border-color: #276c93; -fx-border-radius: 20; -fx-border-width: 1.5;" text="Update" />
+      <TableView fx:id="tblWoodcut" layoutX="39.0" layoutY="364.0" prefHeight="175.0" prefWidth="796.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5;">
+         <columns>
+            <TableColumn fx:id="colWoodcutId" prefWidth="155.0" text="Woodcut ID" />
+            <TableColumn fx:id="colType" prefWidth="118.0" text="Type" />
+            <TableColumn fx:id="colLength" prefWidth="96.0" text="Length" />
+            <TableColumn fx:id="colWidth" prefWidth="102.0" text="Width" />
+            <TableColumn fx:id="colHeight" prefWidth="96.0" text="Height" />
+            <TableColumn fx:id="colQty" prefWidth="119.0" text="Balance pieces" />
+            <TableColumn fx:id="colLogId" prefWidth="109.0" text="Log_ID" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtQty" focusColor="#276c93" layoutX="566.0" layoutY="239.0" prefHeight="29.0" prefWidth="224.0" promptText="No.of peices used" />
+      <Label layoutX="444.0" layoutY="191.0" prefHeight="21.0" prefWidth="69.0" text="Type" />
+      <JFXComboBox fx:id="cmbType" focusColor="#276c93" layoutX="566.0" layoutY="186.0" onAction="#cmbTypeOnAction" prefHeight="31.0" prefWidth="224.0" />
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="567.0" onAction="#btnSaveOnAction" prefHeight="45.0" prefWidth="788.0" style="-fx-border-color: #276c93; -fx-border-radius: 20; -fx-border-width: 1.5;" text="Save" />
+      <Label alignment="CENTER" layoutX="93.0" layoutY="31.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Mahogany" />
+      <Label alignment="CENTER" layoutX="242.0" layoutY="31.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Jak" />
+      <Label alignment="CENTER" layoutX="387.0" layoutY="31.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Teak" />
+      <Label alignment="CENTER" layoutX="530.0" layoutY="31.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Sooriyamara" />
+      <Label alignment="CENTER" layoutX="678.0" layoutY="31.0" prefHeight="30.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-width: 1.5; -fx-border-radius: 10;" text="Kumbuk" />
+      <Label fx:id="lblMahogany" alignment="CENTER" layoutX="93.0" layoutY="77.0" prefHeight="50.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblJak" alignment="CENTER" layoutX="242.0" layoutY="77.0" prefHeight="50.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTeak" alignment="CENTER" layoutX="387.0" layoutY="77.0" prefHeight="50.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSooriyamara" alignment="CENTER" layoutX="530.0" layoutY="77.0" prefHeight="50.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblKumbuk" alignment="CENTER" layoutX="678.0" layoutY="77.0" prefHeight="50.0" prefWidth="100.0" style="-fx-border-color: #276c93; -fx-border-radius: 10; -fx-border-width: 1.5;">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

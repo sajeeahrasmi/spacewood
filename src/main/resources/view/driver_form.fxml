@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="751.0" prefWidth="916.0" styleClass="anchorPane" stylesheets="@../custom.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.spacewood.controller.DriverFormController">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="65.0" prefWidth="874.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #03045e; -fx-border-width: 2;" styleClass="buttonPane" stylesheets="@../custom.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton fx:id="btnAddDriver" buttonType="RAISED" onAction="#btnAddDriverOnAction" onMouseEntered="#btnAddDriverEntered" onMouseExited="#btnAddDriverExited" prefHeight="65.0" prefWidth="140.0" text="Add Driver" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="734.0" AnchorPane.topAnchor="0.0" />
+            <JFXButton fx:id="btnViewDriver" buttonType="RAISED" layoutX="140.0" onAction="#btnViewDriverOnAction" onMouseEntered="#btnViewDriverEntered" onMouseExited="#btnViewDriverExited" prefHeight="65.0" prefWidth="140.0" text="View Drivers" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="driverComPane" layoutY="80.0" prefHeight="640.0" prefWidth="874.0" style="-fx-background-color: pink; -fx-background-radius: 30;" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+   </children>
+</AnchorPane>
